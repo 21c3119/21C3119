@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 430px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333333;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+header {
+    height: 60px;
+    width: 430px;
+    position: fixed;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+    border-bottom: 1px solid #ccc;
+    z-index: 5;
+}
+
+.Region-name.title {
+    margin: auto;
+}
+
+.title {
+    font-size: 16px;
+    margin: 8px;
+}
+
+.Landscape {
+    float: left;
+}
+
+.main {
+    margin: auto;
+    padding-top: 60px; /* headerのheightと同じ値 */
+    padding-bottom: 70px; /* footerのheightと同じ値 */
+    z-index: 1;
+}
+
+.main-content {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.main-content-day {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.main-content-day-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.max-temp {
+    color: #fd3102;
+}
+
+.min-temp {
+    color: #0a38e4;
+}
+
+.main-content-hour {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.main-content-hour-element {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main-content-hour-element-item {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.main-content-hour-element-item:last-child {
+    border-right: none;
+}
+
+.main-content-hour-element img {
+    width: 16px;
+    height: auto;
+}
+
+.main-content-week {
+    background-color: #fff;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content-week-table {
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    width: 95%;
+}
+
+.main-content-week-table th, .main-content-week-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #fff;
+    height: 70px;
+    width: 430px;
+    display: flex;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    box-shadow: 0px 0px 5px #303030;
+    z-index: 10;
+}
+
+.footer-button {
+    height: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-button-box {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-button-box-label {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-button-box-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-button-box-icon-img {
+    width: 30px;
+    object-fit: cover;
+}
