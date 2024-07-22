@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天気予報アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="Region-name title">津田沼</h1>
+    </header>
+    <div class="main">
+        <div class="main-content">
+            <div class="main-content-day">
+                <!-- 今日の天気 -->
+                <div class="main-content-day-card">
+                    <div class="main-content-day-card-element">
+                        <h2 class="title">今日</h2>
+                        <img src="icon/sun.png" alt="晴れ" class="weather-icon">
+                        <p>晴れ</p>
+                        <p><span class="max-temp">25℃</span>/<span class="min-temp">15℃</span></p>
+                        <p>降水確率:20%  風速:5m/s</p>
+                    </div>
+                </div>
+                <!-- 明日の天気 -->
+                <div class="main-content-day-card">
+                    <div class="main-content-day-card-element">
+                        <h2 class="title">明日</h2>
+                        <img src="icon/clouds.png" alt="曇り" class="weather-icon">
+                        <p>曇り</p>
+                        <p><span class="max-temp">22℃</span>/<span class="min-temp">14℃</span></p>
+                        <p>降水確率:30%  風速:3m/s</p>
+                    </div>
+                </div>
+                <!-- 明後日の天気 -->
+                <div class="main-content-day-card">
+                    <div class="main-content-day-card-element">
+                        <h2 class="title">明後日</h2>
+                        <img src="icon/rain.png" alt="雨" class="weather-icon">
+                        <p>雨</p>
+                        <p><span class="max-temp">20℃</span>/<span class="min-temp">13℃</span></p>
+                        <p>降水確率:50%  風速:4m/s</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 今日の天気の変化 -->
+        <div class="main-content">
+            <div class="main-content-hour">
+                <div class="main-content-hour-title">
+                    <h2 class="title">今日の天気の変化</h2>
+                </div>
+                <div class="main-content-hour-element">
+                    <div class="main-content-hour-element-item">
+                        <div>0時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>15℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>1時</div>
+                        <div><img src="icon/clouds.png" alt="曇り"></div>
+                        <div>15℃</div>
+                        <div>60%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>2時</div>
+                        <div><img src="icon/rain.png" alt="雨"></div>
+                        <div>16℃</div>
+                        <div>90%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>3時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>15℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>4時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>17℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>5時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>17℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>6時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>18℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>7時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>19℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>8時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>20℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>9時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>20℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>10時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>23℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>11時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>23℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>12時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>25℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>13時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>25℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>14時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>23℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>15時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>23℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>16時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>23℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>17時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>23℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>18時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>23℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>19時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>23℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>20時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>23℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>21時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>23℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>22時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>22℃</div>
+                        <div>25%</div>
+                    </div>
+                    <div class="main-content-hour-element-item">
+                        <div>23時</div>
+                        <div><img src="icon/sun.png" alt="晴れ"></div>
+                        <div>20℃</div>
+                        <div>25%</div>
+                    </div>
+                    <!-- 他の時間帯も同様に追加 -->
+                </div>
+            </div>
+        </div>
+        <!-- 1週間の天気 -->
+        <div class="main-content">
+            <div class="main-content-week">
+                <div class="main-content-week-title">
+                    <h2 class="title">1週間の天気</h2>
+                </div>
+                <table class="main-content-week-table">
+                    <thead>
+                        <tr>
+                            <th>曜日</th>
+                            <th>天気</th>
+                            <th>気温</th>
+                            <th>風速</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>月曜日</td>
+                            <td>晴れ</td>
+                            <td><span class="max-temp">20℃</span>/<span class="min-temp">13℃</span></td>
+                            <td>5m/s</td>
+                        </tr>
+                        <tr>
+                            <td>火曜日</td>
+                            <td>曇り</td>
+                            <td><span class="max-temp">22℃</span>/<span class="min-temp">14℃</span></td>
+                            <td>3m/s</td>
+                        </tr>
+                        <tr>
+                            <td>水曜日</td>
+                            <td>雨</td>
+                            <td><span class="max-temp">20℃</span>/<span class="min-temp">13℃</span></td>
+                            <td>4m/s</td>
+                        </tr>
+                        <tr>
+                            <td>木曜日</td>
+                            <td>晴れ</td>
+                            <td><span class="max-temp">26℃</span>/<span class="min-temp">16℃</span></td>
+                            <td>6m/s</td>
+                        </tr>
+                        <tr>
+                            <td>金曜日</td>
+                            <td>曇り</td>
+                            <td><span class="max-temp">24℃</span>/<span class="min-temp">13℃</span></td>
+                            <td>3m/s</td>
+                        </tr>
+                        <tr>
+                            <td>土曜日</td>
+                            <td>雨</td>
+                            <td><span class="max-temp">21℃</span>/<span class="min-temp">14℃</span></td>
+                            <td>4m/s</td>
+                        </tr>
+                        <tr>
+                            <td>日曜日</td>
+                            <td>晴れ</td>
+                            <td><span class="max-temp">27℃</span>/<span class="min-temp">15℃</span></td>
+                            <td>5m/s</td>
+                        </tr>
+                        <tr>
+                            <td>月曜日</td>
+                            <td>晴れ</td>
+                            <td><span class="max-temp">20℃</span>/<span class="min-temp">13℃</span></td>
+                            <td>5m/s</td>
+                        </tr>
+                        <tr>
+                            <td>火曜日</td>
+                            <td>曇り</td>
+                            <td><span class="max-temp">25℃</span>/<span class="min-temp">12℃</span></td>
+                            <td>3m/s</td>
+                        </tr>
+                        <tr>
+                            <td>水曜日</td>
+                            <td>雨</td>
+                            <td><span class="max-temp">20℃</span>/<span class="min-temp">10℃</span></td>
+                            <td>4m/s</td>
+                        </tr>
+                        <tr>
+                            <td>木曜日</td>
+                            <td>晴れ</td>
+                            <td><span class="max-temp">27℃</span>/<span class="min-temp">15℃</span></td>
+                            <td>6m/s</td>
+                        </tr>
+                        <tr>
+                            <td>金曜日</td>
+                            <td>曇り</td>
+                            <td><span class="max-temp">20℃</span>/<span class="min-temp">13℃</span></td>
+                            <td>3m/s</td>
+                        </tr>
+                        <tr>
+                            <td>土曜日</td>
+                            <td>雨</td>
+                            <td><span class="max-temp">27℃</span>/<span class="min-temp">12℃</span></td>
+                            <td>4m/s</td>
+                        </tr>
+                        <tr>
+                            <td>日曜日</td>
+                            <td>晴れ</td>
+                            <td><span class="max-temp">23℃</span>/<span class="min-temp">14℃</span></td>
+                            <td>5m/s</td>
+                        </tr>
+                        <!-- 他の曜日も同様に追加 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-button">
+            <a href="#" class="footer-button-box" onclick="navigateTo('地点検索')">
+                <dl>
+                    <dt class="footer-button-box-icon">
+                        <img class="footer-button-box-icon-img" src="icon/search.png" alt="検索">
+                    </dt>
+                    <dd class="footer-button-box-label">地点検索</dd>
+                </dl>
+            </a>
+        </div>
+        <div class="footer-button">
+            <a href="#" class="footer-button-box" onclick="navigateTo('地域の話題')">
+                <dl>
+                    <dt class="footer-button-box-icon">
+                        <img class="footer-button-box-icon-img" src="icon/information.png" alt="話題">
+                    </dt>
+                    <dd class="footer-button-box-label">地域の話題</dd>
+                </dl>
+            </a>
+        </div>
+        <div class="footer-button">
+            <a href="#" class="footer-button-box" onclick="navigateTo('ホーム')">
+                <dl>
+                    <dt class="footer-button-box-icon">
+                        <img class="footer-button-box-icon-img" src="icon/home.png" alt="ホーム">
+                    </dt>
+                    <dd class="footer-button-box-label">ホーム</dd>
+                </dl>
+            </a>
+        </div>
+        <div class="footer-button">
+            <a href="#" class="footer-button-box" onclick="navigateTo('全国')">
+                <dl>
+                    <dt class="footer-button-box-icon">
+                        <img class="footer-button-box-icon-img" src="icon/Nationwide.png" alt="全国">
+                    </dt>
+                    <dd class="footer-button-box-label">全国</dd>
+                </dl>
+            </a>
+        </div>
+        <div class="footer-button">
+            <a href="#" class="footer-button-box" onclick="navigateTo('設定')">
+                <dl>
+                    <dt class="footer-button-box-icon">
+                        <img class="footer-button-box-icon-img" src="icon/setting.png" alt="設定">
+                    </dt>
+                    <dd class="footer-button-box-label">設定</dd>
+                </dl>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
